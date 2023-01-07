@@ -2,16 +2,13 @@
    "name": "w-time-picker",
    "version": "0.3.0",
    "description": "Wellnessentially time picker for our app.",
-   "main": "dist/TimePicker.js",
-   "module": "dist/TimePicker.js",
-   "typings": "dist/TimePicker.d.ts",
    "license": "MIT",
    "repository": {
       "type": "git",
       "url": "https://github.com/mctechnologiesventures/w-time-picker"
    },
    "files": [
-      "dist",
+      "src/**/*.{js,d.ts}",
       "README.md"
    ],
    "dependencies": {

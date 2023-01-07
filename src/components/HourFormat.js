@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { initialNumbersValue, returnSelectedValue } from '../helpers';
-import PickerEffects from './PickerEffects';
 
-function HourFormat({ height, value, setValue, onAmPmChange, setHourFormat, hourFormat }) {
+function HourFormat({ height, setHourFormat, hourFormat }) {
    const Hours = [
       {
          number: 'AM',
@@ -202,7 +200,6 @@ function HourFormat({ height, value, setValue, onAmPmChange, setHourFormat, hour
          onTouchMove={handleTouchMove}
          onTouchEnd={handleMouseUp}
       >
-         {/* <PickerEffects height={height} /> */}
          <div
             ref={mainListRef}
             className={`${showFinalTranslate && 'react-ios-time-picker-hour-format-transition'}`}

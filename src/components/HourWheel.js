@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { initialNumbersValue, returnSelectedValue } from '../helpers';
-import PickerEffects from './PickerEffects';
 
 function HourWheel({ height, value, setValue, use12Hours }) {
    const hourLength = use12Hours ? 13 : 24;
@@ -214,7 +213,6 @@ function HourWheel({ height, value, setValue, use12Hours }) {
          onTouchMove={handleTouchMove}
          onTouchEnd={handleMouseUp}
       >
-         {/* <PickerEffects height={height} /> */}
          <div
             ref={mainListRef}
             className={`${isFastCondition === true && 'react-ios-time-picker-fast'} ${

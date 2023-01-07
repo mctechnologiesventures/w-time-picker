@@ -191,7 +191,6 @@ function MinuteWheel({ height, value, setValue }) {
          onTouchMove={handleTouchMove}
          onTouchEnd={handleMouseUp}
       >
-         {/* <PickerEffects height={height} /> */}
          <div
             ref={mainListRef}
             className={`${isFastCondition === true && 'react-ios-time-picker-fast'} ${
